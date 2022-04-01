@@ -12,6 +12,11 @@ pipeline {
                 echo 'GoodBye World'
             }
         }
+        stage("Verify Branch"){
+            steps{
+                echo '$GIT_BRANCH'
+            }
+        }
         
     }
 }
