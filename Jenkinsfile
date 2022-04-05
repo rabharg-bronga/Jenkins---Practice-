@@ -14,3 +14,4 @@ pipeline {
              body: "Something is wrong with ${env.BUILD_URL}"
     }
 }
+}
