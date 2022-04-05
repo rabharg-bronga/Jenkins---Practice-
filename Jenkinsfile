@@ -1,22 +1,16 @@
 pipeline {
     agent any
-
     stages {
         stage('Hello') {
             steps {
                 echo 'Hello World'
             }
         }
-        stage("GoodBye"){
-            steps{
-                echo 'GoodBye World'
-            }
-        }
-        stage("Verify Branch"){
-            steps{
-                echo '$GIT_BRANCH'
-            }
-        }
-        
+    }
+    post {
+        success {
+        mail to: 'Kanigeri_Shirisha@gap.com',
+             subject: "Success Pipeline: ${currentBuild.fullDisplayName}",
+             body: "Something is wrong with ${env.BUILD_URL}"
     }
 }
