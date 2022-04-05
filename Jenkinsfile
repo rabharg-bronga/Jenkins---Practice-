@@ -9,7 +9,7 @@ pipeline {
     }
     post {
         success {
-        mail to: 'Kanigeri_Shirisha@gap.com',
+        mail to: 'Kanigeri_Shirisha@gap.com,shirishakanigeri@gmail.com',
              subject: "Success Pipeline: ${currentBuild.fullDisplayName}",
              body: "Something is wrong with ${env.BUILD_URL}"
     }
