@@ -12,9 +12,6 @@ wrappers {
     }
 }
 
-#triggers {
- #       pollSCM('30 1 * * *')
- #   }
 
 steps {
     shell('''\
