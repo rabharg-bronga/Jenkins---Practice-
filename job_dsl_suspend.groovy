@@ -88,7 +88,7 @@ steps {
         
         cp ${PARENT_PATH}/${suspended_file} ${WORKSPACE}
         cd /home/jenkins/suspended_users
-        rm -rf ${suspended_file}
+        #rm -rf ${suspended_file}
         cp ${PARENT_PATH}/${suspended_file} /home/jenkins/suspended_users/
         
         rm -rf ${PARENT_PATH}/${dormant_file}
