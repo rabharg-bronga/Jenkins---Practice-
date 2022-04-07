@@ -5,6 +5,10 @@ authorization {
     permission('hudson.model.Item.Cancel:authenticated')
 }
 
+environmentVariables {
+    propertiesFile('mails.properties')
+    keepBuildVariables(true)
+}
 
 
 steps {
@@ -18,10 +22,6 @@ steps {
         '''.stripIndent())
 }
 
-environmentVariables {
-    propertiesFile('mails.properties')
-    keepBuildVariables(true)
-}
 
 publishers {
         extendedEmail {
