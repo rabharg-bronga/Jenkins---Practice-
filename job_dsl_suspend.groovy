@@ -97,7 +97,7 @@ steps {
 
 publishers {
         extendedEmail {
-            recipientList('HQ-IT-PIPES-DG@gap.com')
+            recipientList('Kanigeri_Shirisha@gap.com')
             defaultSubject('Suspending Dormant Users From GitHub')
             defaultContent('List of users who are suspended')
             contentType('text/html')
