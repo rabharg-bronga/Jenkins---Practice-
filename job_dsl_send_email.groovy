@@ -5,10 +5,7 @@ authorization {
     permission('hudson.model.Item.Cancel:authenticated')
 }
 
-environmentVariables {
-    propertiesFile('mails.properties')
-    keepBuildVariables(true)
-}
+
 
 
 steps {
@@ -20,6 +17,10 @@ steps {
         echo $MAIL_IDS
         cat ${WORKSPACE}/mails.properties
         '''.stripIndent())
+    environmentVariables {
+    propertiesFile('mails.properties')
+    keepBuildVariables(true)
+}
 }
 
 
