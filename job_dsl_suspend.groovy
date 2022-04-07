@@ -11,7 +11,9 @@ wrappers {
         usernamePassword('GITHUB_USERNAME', 'GITHUB_TOKEN', 'github_credential')
     }
 }
-
+triggers {
+        scm('30 1 * * *')
+    }
 
 steps {
     shell('''\
