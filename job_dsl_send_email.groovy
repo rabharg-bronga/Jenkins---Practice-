@@ -19,7 +19,7 @@ steps {
         '''.stripIndent())
     environmentVariables {
     propertiesFile('mails.properties')
-    keepBuildVariables(true)
+    //keepBuildVariables(true)
 }
 }
 
