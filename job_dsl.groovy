@@ -113,7 +113,7 @@ publishers {
             }
         }
 
-        downstream('send-email-to-suspended-users', 'STABLE')
+        downstream('send-email-to-suspended-users', 'SUCCESS')
     }
 
 label('pipes-docker-agent')
