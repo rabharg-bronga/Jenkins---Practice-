@@ -1,4 +1,4 @@
-job('github-unsuspend-user') {
+job('github-suspend-user') {
 
 authorization {
     permission('hudson.model.Item.Build:authenticated')
